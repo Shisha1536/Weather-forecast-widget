@@ -1,7 +1,7 @@
 import { BuildingСontent } from "./BuildingСontent";
 export const keyAPP = '7e4f489c466bdc1973ccfba08a64ecb4';
 
-export function Request(lat, lon) {
+export function Request(lat, lon, funck1) {
     let tumbler = document.querySelector('.checkbox');
     let url
     if (tumbler.checked === false) {
@@ -13,10 +13,10 @@ export function Request(lat, lon) {
     .then((response) => response.json())
     .then((data) => {
         if (tumbler.checked === false) {
-            BuildingСontent(data);
+            BuildingСontent(data, funck1);
         } else {
             let array = data.list;
-            BuildingСontent(array);
+            BuildingСontent(array, funck1);
         }
     })
     .catch((err) => {

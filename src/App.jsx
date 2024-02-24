@@ -1,23 +1,22 @@
 import { useState } from 'react'; 
 import './App.css'
-import Tumbler from "./Tumbler";
+import Tumbler from "./Сomponents/jsx/Tumbler";
 import TheSearchBar from "./TheSearchBar";
 import ByGeolocation from "./ByGeolocation";
-//import { ListComponent } from "./Сomponents/jsx/BuildingСontent";
 
 
 export function App() {
-     
+    const [listComponent, setListComponent] = useState([])
 
     return (
         <form className="form-parametrs">
             <div className="parametrs">
                 <Tumbler label="Погода" />
                 <TheSearchBar />
-                <ByGeolocation />
+                <ByGeolocation funck = {setListComponent}/>
             </div>
             <div className="weather">
-                
+                {listComponent}
             </div>
         </form>
     );
