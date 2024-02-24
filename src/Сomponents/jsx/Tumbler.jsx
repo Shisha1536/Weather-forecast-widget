@@ -1,5 +1,5 @@
 import React from "react";
-import "./Сomponents/css/Tumbler.css";
+import "../css/Tumbler.css";
  
 const Tumbler = ({ label }) => {
     return (

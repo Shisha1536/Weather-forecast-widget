@@ -1,7 +1,7 @@
 import { BuildingСontent } from "./BuildingСontent";
 export const keyAPP = '7e4f489c466bdc1973ccfba08a64ecb4';
 
-export function Request(lat, lon, funck1) {
+export function Request(lat, lon, funck) {
     let tumbler = document.querySelector('.checkbox');
     let url
     if (tumbler.checked === false) {
@@ -13,17 +13,17 @@ export function Request(lat, lon, funck1) {
     .then((response) => response.json())
     .then((data) => {
         if (tumbler.checked === false) {
-            BuildingСontent(data, funck1);
+            BuildingСontent(data, funck);
         } else {
             let array = data.list;
-            BuildingСontent(array, funck1);
+            BuildingСontent(array, funck);
         }
     })
     .catch((err) => {
         console.log(err)
     })
 }
-export function RequestCity() {
+export function RequestCity(funck) {
     let city = document.querySelector('.line').value;
     if (city === "") {
         alert('Город, населенный пункт не заполнен.')
@@ -33,7 +33,7 @@ export function RequestCity() {
         fetch(encoded)
         .then((response) => response.json())
         .then((data) => {
-            Request(data[0].lat, data[0].lon)
+            Request(data[0].lat, data[0].lon, funck)
         })
         .catch((err) => {
             console.log(err)

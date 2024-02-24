@@ -1,8 +1,8 @@
 import { useState } from 'react'; 
 import './App.css'
 import Tumbler from "./Сomponents/jsx/Tumbler";
-import TheSearchBar from "./TheSearchBar";
-import ByGeolocation from "./ByGeolocation";
+import TheSearchBar from "./Сomponents/jsx/TheSearchBar";
+import ByGeolocation from "./Сomponents/jsx/ByGeolocation";
 
 
 export function App() {
@@ -12,7 +12,7 @@ export function App() {
         <form className="form-parametrs">
             <div className="parametrs">
                 <Tumbler label="Погода" />
-                <TheSearchBar />
+                <TheSearchBar funck = {setListComponent}/>
                 <ByGeolocation funck = {setListComponent}/>
             </div>
             <div className="weather">
