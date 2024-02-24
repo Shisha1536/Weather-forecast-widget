@@ -1,5 +1,5 @@
-import logo from '../img/icons8-маркер-25.png'
-import '../css/TheSearchBarAndByGeolocation.css'
+import logo from './Сomponents/img/icons8-маркер-25.png'
+import './Сomponents/css/TheSearchBarAndByGeolocation.css'
 import { Request } from "./Request";
 
 function GetGeoWeather() {

@@ -1,5 +1,5 @@
-import '../css/TheSearchBarAndByGeolocation.css'
-import logo from '../img/icons8-поиск.svg'
+import './Сomponents/css/TheSearchBarAndByGeolocation.css'
+import logo from './Сomponents/img/icons8-поиск.svg'
 import { RequestCity } from "./Request";
 
 function TheSearchBar() {

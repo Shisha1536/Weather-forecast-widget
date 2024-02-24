@@ -1,7 +1,6 @@
 export const ListComponent = [];
 
 export function BuildingСontent(data) {
-    debugger
     if (typeof(data) != Array) {
         let item = <div>
             {data}

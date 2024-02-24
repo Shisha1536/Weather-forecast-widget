@@ -1,15 +1,13 @@
-//import { useState } from 'react'; 
+import { useState } from 'react'; 
 import './App.css'
-import Tumbler from "./Сomponents/jsx/Tumbler";
-import TheSearchBar from "./Сomponents/jsx/TheSearchBar";
-import ByGeolocation from "./Сomponents/jsx/ByGeolocation";
+import Tumbler from "./Tumbler";
+import TheSearchBar from "./TheSearchBar";
+import ByGeolocation from "./ByGeolocation";
 //import { ListComponent } from "./Сomponents/jsx/BuildingСontent";
 
+
 export function App() {
-    //const [components, setComponents] = useState(); 
-    //function addComponent() { 
-    //    setComponents([...components]) 
-    //} 
+     
 
     return (
         <form className="form-parametrs">
